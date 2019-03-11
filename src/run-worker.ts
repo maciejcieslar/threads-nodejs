@@ -9,7 +9,6 @@ export function runWorker(path: string, cb: WorkerCallback, workerData: object |
   worker.on('error', cb);
 
   worker.on('exit', (exitCode) => {
-    console.log('exit');
     if (exitCode === 0) {
       return null;
     }
