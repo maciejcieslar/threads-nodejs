@@ -1,0 +1,35 @@
+{
+  "name": "threads-nodejs",
+  "version": "1.0.0",
+  "description": "Complete guide to threads in Node.js!",
+  "main": "build/index.js",
+  "author": "maciejcieslar",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": "nodemon -e ts --exec \"yarn run start\"",
+    "start:prod": "yarn run start",
+    "build": "rm -rf build && tsc",
+    "start": "yarn run build && node build/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.6",
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^11.9.4",
+    "@types/uuid": "^3.4.4",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.10",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "module-alias": "^2.2.0",
+    "os-utils": "^0.0.14",
+    "uuid": "^3.3.2"
+  }
+}
